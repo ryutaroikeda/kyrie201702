@@ -3,16 +3,17 @@
 global = {
 	\key f \major
 	\time 12/8
-	\tempo 8 = 140
+	\tempo 4. = 50
 }
 
 soprano_music = \relative c'' {
 	a2. g2. |
 	bes2 a8 g8 a4. a4 r8 |
-	%bes2 a8 g8 f4. a4 r8 |
 	bes4 g8 e8 f8 g8 a4 f8 d8 e8 f8 |
 	g2. g2. |
 	g2. bes2. |
+	c8 bes8 a8 bes8 a8 g8 f8 bes8 g8 a4 f8 |
+	f4. g4. a4. 
 }
 
 soprano_words = \lyricmode {
@@ -25,6 +26,8 @@ alto_music = \relative c' {
 	d2 d8 e8 c2 c8 d8 |
 	d2. e2. |
 	f2. g2. |
+	f2~ f8 e8 d4. e4. |
+	d8 e8 f8 e4 f8 f4.
 }
 
 alto_words = \lyricmode {
@@ -36,10 +39,11 @@ baritone_music = \relative c {
 	f4. a4. bes4. c4. |
 	%f4. a4. g4. c4. |
 	c,4. e4. f4. f,4. |
-	bes4. bes'4. f4. f,4. |
-	bes8 g8 a8 bes8 d8 a8 bes8 g8 a8 bes8 e8 a,8 |
+	g4. c4. f,4. bes4. |
+	e,8 g8 a8 bes8 d8 a8 bes8 g8 a8 bes8 e8 a,8 |
 	bes8 g8 a8 bes8 g'8 e8 c8 e8 g8 bes8 a8 g8 | 
-	f8 
+	a4 bes8 c2. c,4. |
+	bes4. c4. f,4.
 }
 
 baritone_words = \lyricmode {
