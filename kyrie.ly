@@ -84,7 +84,7 @@ baritone_words = \lyricmode {
 			}
 			\new Staff \with { midiInstrument = #"church organ" } <<
 				\new Voice = "baritones" {
-					\voiceThree
+					%\voiceThree
 					<< \global \clef "bass" \baritone_music >>
 				}
 			>>
