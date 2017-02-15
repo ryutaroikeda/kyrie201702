@@ -15,3 +15,4 @@ wav: kyrie.wav
 
 .PHONY: all
 .PHONY: play
+
