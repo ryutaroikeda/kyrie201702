@@ -1,22 +1,20 @@
 \version "2.18.2"
 
 global = {
-	\key f \major
+	\key a \major
 	\time 12/8
 	\tempo 4. = 60
 }
 
 soprano_music = \relative c'' {
-	a2. g4. g4 r8 |
-	bes2 a8( g8) a4. a4 r8 |
-	bes4 g8 e8( f8 g8 a4 f8 d8 e8 f8) |
-	g2. g2. |
-	g2. bes2. |
-	c8 bes8 a8( bes8 a8 g8 f8 bes8 g8 a4) f8 |
-	f4. bes4. a2 r4 |
-	r2. r2. |
-	r4. d4 d8 d4 c8 bes4 a8 |
-	g4.
+
+	cis2. b4. b4 r8 |
+	d2 cis8( b8) cis4. cis4 r8 |
+	d4 b8 gis8( a8 b8 cis4 a8 fis8 gis8 a8) |
+	b2. b2. |
+	b2. d2. |
+	e8 d8 cis8( d8 cis8 b8 a8 d8 b8 cis4) a8 |
+	a4. d4. cis2 r4 |
 
 }
 
@@ -27,42 +25,35 @@ soprano_words = \lyricmode {
 }
 
 alto_music = \relative c' {
-	c4 f8 f4 f8 f4 e8 e4 r8 |
-	g4 e8 c4 bes8 a8( d8) bes8 c4 r8 |
-	d2 d8 e8 c2 c8 d8 |
-	d2.( e2. |
-	f2. g2.) |
-	f2~ f8 e8 d4.( e4.) |
-	d8 e8( f8 e4) f8 f2 r4 |
-	f4 bes8 bes4 bes8 bes4 a8 a4 g8 |
-	f4. bes,4. c4. d4. |
-	ees4. g4 g8 aes4 g8 f4 aes8 |
-	g4. r4. r2. |
-	r2. g4. c4 c8 |
-	c4 bes8 bes4
-	
+
+	e4 a8 a4 a8 a4 gis8 gis4 r8 |
+	b4 gis8 e4 d8 cis8( fis8) d8 e4 r8 |
+	fis2 fis8 gis8 e2 e8 fis8 |
+	fis2.( gis2. |
+	a2. b4. b,4. ) |
+	cis4 d8 e2. g4. |
+	fis8 gis8( a8 gis4) a8 a2 r4 |
+
 }
 
 alto_words = \lyricmode {
 	ky -- ri -- e e -- le -- i -- son
 	ky -- ri -- e e -- le -- i -- son
 	ky -- ri -- e e -- le -- i -- son
-	ky -- ri -- e e -- le -- i -- son
+	ky -- ri -- e
 }
 
 baritone_music = \relative c {
-	f4. a4. bes4.( c4) r8 |
-	c,4. e4. f4. f,4 r8 |
-	g4. c4. f,4.( bes4.) |
-	r8 g8 a8 bes8( d8 a8 bes8 g8 a8 bes8 e8 a,8 |
-	bes8 g8 a8 bes8 g'8 e8) c8 e8( g8 bes8) a8 g8 | 
-	a4 bes8 c2. c,4. |
-	bes4. c4. f2 r4 |
-	bes,4. d4. ees4. f4 ees8 |
-	d4. r4. r2. |
-	r2. r2. |
-	r4. ees4 ees8 g4 f8 ees4 d8 |
-	c4. f4 f8 f4 e8 e4 r8 |
+
+	a4. cis4. d4.( e4) r8 |
+	e4. gis4. a4. a,4 r8 |
+	b4. e4. a,4.( d4.) |
+	r8 b8 cis8 d8( fis8 cis8 d8 b8 cis8 d8 gis8 cis,8 |
+	d8 b8 cis8 d8 b'8 gis8) e8 gis8( b8 d8) cis8 b8 |
+	r2. r4. e4. |
+	%cis4 d8 e2. e,4. |
+	%d4. e4. a2 r4 |
+
 }
 
 baritone_words = \lyricmode {
