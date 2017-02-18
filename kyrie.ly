@@ -3,7 +3,7 @@
 global = {
 	\key f \major
 	\time 12/8
-	\tempo 4. = 50
+	\tempo 4. = 60
 }
 
 soprano_music = \relative c'' {
@@ -13,9 +13,10 @@ soprano_music = \relative c'' {
 	g2. g2. |
 	g2. bes2. |
 	c8 bes8 a8( bes8 a8 g8 f8 bes8 g8 a4) f8 |
-	f4. g4. a4. r4. |
-	r2. c4. f4 f8 |
-	f4 ees8 ees4 r8 d4. g4 g8 |
+	f4. bes4. a2 r4 |
+	r2. r2. |
+	r4. d4 d8 d4 c8 bes4 a8 |
+	g4.
 
 }
 
@@ -32,9 +33,12 @@ alto_music = \relative c' {
 	d2.( e2. |
 	f2. g2.) |
 	f2~ f8 e8 d4.( e4.) |
-	d8 e8( f8 e4) f8 f4. r4. |
-	f4. bes4 bes8 bes4 a8 a4 r8 |
-	g4. c4 c8 c4 bes8 bes4 r8 |
+	d8 e8( f8 e4) f8 f2 r4 |
+	f4 bes8 bes4 bes8 bes4 a8 a4 g8 |
+	f4. bes,4. c4. d4. |
+	ees4. g4 g8 aes4 g8 f8 aes8 f8 |
+	g4.
+	
 }
 
 alto_words = \lyricmode {
@@ -51,7 +55,12 @@ baritone_music = \relative c {
 	r8 g8 a8 bes8( d8 a8 bes8 g8 a8 bes8 e8 a,8 |
 	bes8 g8 a8 bes8 g'8 e8) c8 e8( g8 bes8) a8 g8 | 
 	a4 bes8 c2. c,4. |
-	bes4. c4. f,4. r4. |
+	bes4. c4. f2 r4 |
+	bes,4. d4. ees4. f4 ees8 |
+	d4. r4. r2. |
+	r2. r2. |
+	r4. ees4 ees8 g4 f8 ees4 d8 |
+	c4.
 }
 
 baritone_words = \lyricmode {
@@ -68,7 +77,7 @@ baritone_words = \lyricmode {
 				\override VerticalAxisGroup.staff-affinity = #DOWN
 			}
 
-			\new Staff \with { midiInstrument = #"church organ" } <<
+			\new Staff \with { midiInstrument = #"harpsichord" } <<
 				\new Voice = "sopranos" {
 					\voiceOne
 					<< \global \soprano_music >>
@@ -82,7 +91,7 @@ baritone_words = \lyricmode {
 			\new Lyrics = "baritones" \with {
 				\override VerticalAxisGroup.staff-affinity = #DOWN
 			}
-			\new Staff \with { midiInstrument = #"church organ" } <<
+			\new Staff \with { midiInstrument = #"harpsichord" } <<
 				\new Voice = "baritones" {
 					%\voiceThree
 					<< \global \clef "bass" \baritone_music >>
@@ -95,13 +104,13 @@ baritone_words = \lyricmode {
 
 %{
 		\new PianoStaff <<
-			\new Staff \with { midiInstrument = #"church organ" } <<
+			\new Staff \with { midiInstrument = #"harpsichord" } <<
 				\set Staff.printPartCombineTexts = ##f
 				\partcombine
 				<< \global \soprano_music >>
 				<< \global \alto_music >>
 			>>
-			\new Staff \with { midiInstrument = #"church organ" } <<
+			\new Staff \with { midiInstrument = #"harpsichord" } <<
 				\clef "bass"
 				<< \global \baritone_music >>
 			>>
@@ -111,4 +120,11 @@ baritone_words = \lyricmode {
 	\midi {}
 	\layout {}
 }
+
+%{
+	c4. f4 f8 f4 e8 e4 d8 |
+	c4. a4 a8 a4 g8 f4 e8 |
+	d4. f4 f8 ees4 c8 f,4 ees'8 |
+	d4. 
+%}
 
