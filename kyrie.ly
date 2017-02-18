@@ -3,7 +3,7 @@
 global = {
 	\key a \major
 	\time 12/8
-	\tempo 4. = 60
+	\tempo 4. = 50
 }
 
 soprano_music = \relative c'' {
@@ -12,7 +12,7 @@ soprano_music = \relative c'' {
 	d2 cis8( b8) cis4. cis4 r8 |
 	d4 b8 gis8( a8 b8 cis4 a8 fis8 gis8 a8) |
 	b2. b2. |
-	b2. d2. |
+	b2. b2. |
 	e8 d8 cis8( d8 cis8 b8 a8 d8 b8 cis4) a8 |
 	a4. d4. cis2 r4 |
 
@@ -29,10 +29,10 @@ alto_music = \relative c' {
 	e4 a8 a4 a8 a4 gis8 gis4 r8 |
 	b4 gis8 e4 d8 cis8( fis8) d8 e4 r8 |
 	fis2 fis8 gis8 e2 e8 fis8 |
-	fis2.( gis2. |
-	a2. b4. b,4. ) |
+	d2. e2. |
+	f2. gis8 fis8 e8 fis8 e8 d8 |
 	cis4 d8 e2. g4. |
-	fis8 gis8( a8 gis4) a8 a2 r4 |
+	fis8 gis8 a8 gis4 a8 a2 r4 |
 
 }
 
@@ -50,9 +50,8 @@ baritone_music = \relative c {
 	b4. e4. a,4.( d4.) |
 	r8 b8 cis8 d8( fis8 cis8 d8 b8 cis8 d8 gis8 cis,8 |
 	d8 b8 cis8 d8 b'8 gis8) e8 gis8( b8 d8) cis8 b8 |
-	r2. r4. e4. |
-	%cis4 d8 e2. e,4. |
-	%d4. e4. a2 r4 |
+	a4. gis4. fis4. e4. |
+	d4. e4. a2 r4 |
 
 }
 
@@ -70,7 +69,7 @@ baritone_words = \lyricmode {
 				\override VerticalAxisGroup.staff-affinity = #DOWN
 			}
 
-			\new Staff \with { midiInstrument = #"harpsichord" } <<
+			\new Staff \with { midiInstrument = #"acoustic grand" } <<
 				\new Voice = "sopranos" {
 					\voiceOne
 					<< \global \soprano_music >>
@@ -84,7 +83,7 @@ baritone_words = \lyricmode {
 			\new Lyrics = "baritones" \with {
 				\override VerticalAxisGroup.staff-affinity = #DOWN
 			}
-			\new Staff \with { midiInstrument = #"harpsichord" } <<
+			\new Staff \with { midiInstrument = #"acoustic grand" } <<
 				\new Voice = "baritones" {
 					%\voiceThree
 					<< \global \clef "bass" \baritone_music >>
@@ -97,13 +96,13 @@ baritone_words = \lyricmode {
 
 %{
 		\new PianoStaff <<
-			\new Staff \with { midiInstrument = #"harpsichord" } <<
+			\new Staff \with { midiInstrument = #"acoustic grand" } <<
 				\set Staff.printPartCombineTexts = ##f
 				\partcombine
 				<< \global \soprano_music >>
 				<< \global \alto_music >>
 			>>
-			\new Staff \with { midiInstrument = #"harpsichord" } <<
+			\new Staff \with { midiInstrument = #"acoustic grand" } <<
 				\clef "bass"
 				<< \global \baritone_music >>
 			>>
