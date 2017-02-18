@@ -36,8 +36,10 @@ alto_music = \relative c' {
 	d8 e8( f8 e4) f8 f2 r4 |
 	f4 bes8 bes4 bes8 bes4 a8 a4 g8 |
 	f4. bes,4. c4. d4. |
-	ees4. g4 g8 aes4 g8 f8 aes8 f8 |
-	g4.
+	ees4. g4 g8 aes4 g8 f4 aes8 |
+	g4. r4. r2. |
+	r2. g4. c4 c8 |
+	c4 bes8 bes4
 	
 }
 
@@ -60,7 +62,7 @@ baritone_music = \relative c {
 	d4. r4. r2. |
 	r2. r2. |
 	r4. ees4 ees8 g4 f8 ees4 d8 |
-	c4.
+	c4. f4 f8 f4 e8 e4 r8 |
 }
 
 baritone_words = \lyricmode {
