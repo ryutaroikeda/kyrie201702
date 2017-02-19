@@ -28,6 +28,11 @@ soprano_music = \relative c'' {
 	e8 d8 cis8( d8 cis8 b8 a8 d8 b8 cis4) a8 |
 	a4. d4. cis2 r4 |
 
+	a4. d4 d8 d4 cis8 cis4 b8 |
+	a4. r4. r2. |
+	r2. a4. d4 d8 |
+	d4 c8 c4 r8 b4. e4 e8 |
+	e4 d8 d4 r8 
 }
 
 soprano_words = \lyricmode {
@@ -46,6 +51,12 @@ alto_music = \relative c' {
 	f2. gis8 fis8 e8 fis8 e8 d8 |
 	cis4 d8 e2. g4. |
 	fis8 gis8 a8 gis4 a8 a2 r4 |
+
+	r2. r2. |
+	r4. fis4 fis8 fis4 e8 d4 cis8 |
+	d4. g4 g8 g4 fis8 fis4 r8 |
+	e4. a4 a8 a4 g8 g4 r8 |
+	f4. bes4 bes8
 
 }
 
@@ -67,6 +78,10 @@ baritone_music = \relative c {
 	a4. gis4. fis4. e4. |
 	d4. e4. a2 r4 |
 
+	d,4. fis4. e4. a4 g8 |
+	fis4. d4. e4. fis4. |
+	b,4. r4. r2. |
+
 }
 
 baritone_words = \lyricmode {
@@ -83,7 +98,7 @@ baritone_words = \lyricmode {
 				\override VerticalAxisGroup.staff-affinity = #DOWN
 			}
 
-			\new Staff \with { midiInstrument = #"choir aahs" } <<
+			\new Staff \with { midiInstrument = #"church organ" } <<
 				\new Voice = "sopranos" {
 					\voiceOne
 					<< \global \soprano_music >>
@@ -97,7 +112,7 @@ baritone_words = \lyricmode {
 			\new Lyrics = "baritones" \with {
 				\override VerticalAxisGroup.staff-affinity = #DOWN
 			}
-			\new Staff \with { midiInstrument = #"choir aahs" } <<
+			\new Staff \with { midiInstrument = #"church organ" } <<
 				\new Voice = "baritones" {
 					%\voiceThree
 					<< \global \clef "bass" \baritone_music >>
@@ -110,13 +125,13 @@ baritone_words = \lyricmode {
 
 %{
 		\new PianoStaff <<
-			\new Staff \with { midiInstrument = #"choir aahs" } <<
+			\new Staff \with { midiInstrument = #"church organ" } <<
 				\set Staff.printPartCombineTexts = ##f
 				\partcombine
 				<< \global \soprano_music >>
 				<< \global \alto_music >>
 			>>
-			\new Staff \with { midiInstrument = #"choir aahs" } <<
+			\new Staff \with { midiInstrument = #"church organ" } <<
 				\clef "bass"
 				<< \global \baritone_music >>
 			>>
