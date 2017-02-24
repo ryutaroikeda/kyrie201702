@@ -28,12 +28,18 @@ soprano_music = \relative c'' {
 	e8 d8 cis8( d8 cis8 b8 a8 d8 b8 cis4) a8 |
 	a4. d4. cis2 r4 |
 
-	a4. d4 d8 d4 cis8 cis4 b8 |
-	a4. r4. r2. |
+	r2. r2. |
+	r2. r2. |
+	r2. r2. |
+	r2. r2. |
+	r2. r2. |
+	r2. r2. |
+	r2. r2. |
+	r2. r2. |
+
 	r2. a4. d4 d8 |
-	d4 c8 c4 r8 b4. e4 e8 |
-	e4 d8 d4. d4. c4. |
-	c4. b4. 
+	d4 cis8 cis4 r8 b4. e4 e8 |
+	e4 d8 d4 r8
 }
 
 soprano_words = \lyricmode {
@@ -53,13 +59,18 @@ alto_music = \relative c' {
 	cis4 d8 e2. g4. |
 	fis8 gis8 a8 gis4 a8 a2 r4 |
 
+	fis2 g8 a8 b8 a8 g8 fis8 g8 d8 |
+	fis4 e4 fis8 g8 a8 g8 fis8 g8 fis8 e8 |
+	e4 d4 e8 fis8 e4 b8 e4. |
 	r2. r2. |
-	r4. fis4 fis8 fis4 e8 d4 cis8 |
+	r2. r2. |
+	r2. r2. |
+	r2. r2. |
+	r2. r2. |
+
 	d4. g4 g8 g4 fis8 fis4 r8 |
 	e4. a4 a8 a4 g8 g4 r8 |
-	f4. bes4 bes8 gis4. a4. |
-	a4. gis4. 
-
+	f4. bes4 bes8 gis4
 }
 
 alto_words = \lyricmode {
@@ -80,12 +91,9 @@ baritone_music = \relative c {
 	a4. gis4. fis4. e4. |
 	d4. e4. a2 r4 |
 
-	d,4. fis4. e4. a4 g8 |
-	fis4. d4. e4. fis4. |
-	b,4. r4. r2. |
-	r2. r2. |
-	r2. r4. dis4. |
-	e4. e4. 
+	d,4. d4. d4. d4. |
+	cis4. cis4. cis4. cis4. |
+	b4. b'4. g4. g4. |
 }
 
 baritone_words = \lyricmode {
