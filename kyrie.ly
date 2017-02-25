@@ -32,14 +32,8 @@ soprano_music = \relative c'' {
 	r2. r2. |
 	r2. r2. |
 	r2. r2. |
-	r2. r2. |
-	r2. r2. |
-	r2. r2. |
-	r2. r2. |
+	fis,4
 
-	r2. a4. d4 d8 |
-	d4 cis8 cis4 r8 b4. e4 e8 |
-	e4 d8 d4 r8
 }
 
 soprano_words = \lyricmode {
@@ -59,18 +53,12 @@ alto_music = \relative c' {
 	cis4 d8 e2. g4. |
 	fis8 gis8 a8 gis4 a8 a2 r4 |
 
-	fis2 g8 a8 b8 a8 g8 fis8 g8 d8 |
-	fis4 e4 fis8 g8 a8 g8 fis8 g8 fis8 e8 |
-	e4 d4 e8 fis8 e4 b8 e4. |
-	r2. r2. |
-	r2. r2. |
-	r2. r2. |
-	r2. r2. |
-	r2. r2. |
+	fis2 g8 a8 b4.~ b4 b8~ |
+	b4 a8~ a8 e'8 cis8 b4 ais8 b4 cis8 |
+	d2 cis8 b8 a4 g4. e8 |
+	fis4 b8 a4 g8 fis4  g16 fis16 e4. |
 
-	d4. g4 g8 g4 fis8 fis4 r8 |
-	e4. a4 a8 a4 g8 g4 r8 |
-	f4. bes4 bes8 gis4
+
 }
 
 alto_words = \lyricmode {
@@ -92,8 +80,10 @@ baritone_music = \relative c {
 	d4. e4. a2 r4 |
 
 	d,4. d4. d4. d4. |
-	cis4. cis4. cis4. cis4. |
-	b4. b'4. g4. g4. |
+	cis4. cis4. fis4. fis4. |
+	b,4. b4. b4. cis4. |
+	d4. g,4. a4. cis4. |
+	d4.
 }
 
 baritone_words = \lyricmode {
@@ -110,7 +100,7 @@ baritone_words = \lyricmode {
 				\override VerticalAxisGroup.staff-affinity = #DOWN
 			}
 
-			\new Staff \with { midiInstrument = #"reed organ" } <<
+			\new Staff \with { midiInstrument = #"pizzicato strings" } <<
 				\new Voice = "sopranos" {
 					\voiceOne
 					<< \global \soprano_music >>
@@ -124,7 +114,7 @@ baritone_words = \lyricmode {
 			\new Lyrics = "baritones" \with {
 				\override VerticalAxisGroup.staff-affinity = #DOWN
 			}
-			\new Staff \with { midiInstrument = #"reed organ" } <<
+			\new Staff \with { midiInstrument = #"pizzicato strings" } <<
 				\new Voice = "baritones" {
 					%\voiceThree
 					<< \global \clef "bass" \baritone_music >>
@@ -137,13 +127,13 @@ baritone_words = \lyricmode {
 
 %{
 		\new PianoStaff <<
-			\new Staff \with { midiInstrument = #"reed organ" } <<
+			\new Staff \with { midiInstrument = #"pizzicato strings" } <<
 				\set Staff.printPartCombineTexts = ##f
 				\partcombine
 				<< \global \soprano_music >>
 				<< \global \alto_music >>
 			>>
-			\new Staff \with { midiInstrument = #"reed organ" } <<
+			\new Staff \with { midiInstrument = #"pizzicato strings" } <<
 				\clef "bass"
 				<< \global \baritone_music >>
 			>>
