@@ -33,10 +33,10 @@ soprano_music = \relative c'' {
 	r2. r2. |
 	r2. r2. |
 
-	fis,4. r4. e4. a4 a8 |
-	a4 g8 g4 r8 fis4. b4 b8 |
-	b4 a8 a4. a2. |
-	a4.
+	a4. d4 d8 d4 cis8 cis4 r8 |
+	b4. e4 e8 e4 d8 d4 r8 |
+	cis4. fis4 fis8 fis4 eis8 eis4 fis8 |
+	fis4.
 
 }
 
@@ -62,10 +62,10 @@ alto_music = \relative c' {
 	d4.~ d8 cis8 b8 a4 g8~ g4 e8 |
 	fis4 b8 a4 g8 fis4  g16 fis16 e4. |
 
-	a,4. d4 d8 d4 cis8 cis4 r8 |
-	b4. e4 e8 e4 d8 d4 r8 |
-	cis4. fis4 fis8 fis4 eis8 eis4 fis8 |
-	fis4.
+	fis4. r4. e4. a4 a8 |
+	a4 g8 g4 r8 fis4. b4 b8 |
+	b4 a8 a4. a2. |
+	a4.
 
 }
 
@@ -111,7 +111,7 @@ baritone_words = \lyricmode {
 				\override VerticalAxisGroup.staff-affinity = #DOWN
 			}
 
-			\new Staff \with { midiInstrument = #"orchestral harp" } <<
+			\new Staff \with { midiInstrument = #" church organ" } <<
 				\new Voice = "sopranos" {
 					\voiceOne
 					<< \global \soprano_music >>
@@ -125,7 +125,7 @@ baritone_words = \lyricmode {
 			\new Lyrics = "baritones" \with {
 				\override VerticalAxisGroup.staff-affinity = #DOWN
 			}
-			\new Staff \with { midiInstrument = #"orchestral harp" } <<
+			\new Staff \with { midiInstrument = #" church organ" } <<
 				\new Voice = "baritones" {
 					%\voiceThree
 					<< \global \clef "bass" \baritone_music >>
@@ -138,13 +138,13 @@ baritone_words = \lyricmode {
 
 %{
 		\new PianoStaff <<
-			\new Staff \with { midiInstrument = #"orchestral harp" } <<
+			\new Staff \with { midiInstrument = #" church organ" } <<
 				\set Staff.printPartCombineTexts = ##f
 				\partcombine
 				<< \global \soprano_music >>
 				<< \global \alto_music >>
 			>>
-			\new Staff \with { midiInstrument = #"orchestral harp" } <<
+			\new Staff \with { midiInstrument = #" church organ" } <<
 				\clef "bass"
 				<< \global \baritone_music >>
 			>>
