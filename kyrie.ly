@@ -1,6 +1,6 @@
 \version "2.18.2"
 
-speed = 50
+speed = 80
 
 normal_tempo = {
 	\time 12/8
@@ -25,7 +25,7 @@ soprano_music = \relative c'' {
 	r4. r8 gis8 a8 b8 gis8 a8 b4.~ |
 	b4.~ b8 fis8 gis8 a8 fis8 gis8 a4. |
 
-	a2. b2. |
+	b2. b2. |
 	b2. b2. |
 	e8 d8 cis8( d8 cis8 b8 a8 d8 b8 cis4) a8 |
 	a4. d4. cis2 r4 |
@@ -39,20 +39,24 @@ soprano_music = \relative c'' {
 	b4. e4 e8 e4 d8 d4 r8 |
 	cis4. fis4 fis8 fis4 eis8 eis4 r8 |
 
-%{
-	a,4.~ a8 b8 cis8 d4.~ d4 d8~ |
-	d4 cis8~ cis8 e8 cis8 b4 ais8 gis4 fis8~ |
-	fis4 fis8 gis4 ais8 b8 cis8 d8 gis,8 a8 b8 |
-	fis4 eis8~ eis8 gis8 b8 d4.~ d4 cis8 |
-	b4 a8 b4 gis8 a2.~ |
-	a4 cis8 b4 cis8 d4 b8 a4 gis8 |
+	fis4. r8 b,8 cis8 d8 b8 cis8 d4.~ |
+	d4.~ d8 a8 b8 cis8 a8 b8 cis4. |
+	b2. b2. |
+	r2. r2. |
+	r2. r2. |
+	r2. r2. |
 
-%}
+	r2. a4.~ a8 b8 cis8 |
+	d4.~ d4 d8~ d4 cis8~ cis4 b8 |
+	cis4. r4. b4.~ b8 a8 gis8 |
+	fis4.~ fis4 gis8 a4. gis4. |
 
-	a4. r4. r2. |
 	r2. r2. |
 	r2. r2. |
-	r2. r2. |
+
+	r4. r8 gis8 a8 b8 gis8 a8 b4.~ |
+	b4.~ b8 fis8 gis8 a8 fis8 gis8 a4. |
+
 	b2. b2. |
 	b2. b2. |
 	e8 d8 cis8( d8 cis8 b8 a8 d8 b8 cis4) a8 |
@@ -68,7 +72,7 @@ soprano_words = \lyricmode {
 
 alto_music = \relative c' {
 
-	e4 a8 a4 a8 a4 gis8 gis4 r8 |
+	e4. a4 a8 a4 gis8 gis4 r8 |
 	b4 gis8 e4 d8 cis8( fis8) d8 e4 r8 |
 
 	fis8 d8 e8 fis4.~ fis4.~ fis8 e8 d8 |
@@ -81,28 +85,33 @@ alto_music = \relative c' {
 
 	r2. d,4.~ d8 e8 fis8 |
 	g4.~ g4 g8~ g4 fis8~ fis4 e8 |
-	d4. r4. e4.~ e8 d8 cis8 |
+	fis4. r4. e4.~ e8 d8 cis8 |
 	b4.~ b4 cis8 d4. cis4. |
 
 	r2. e4. a4 a8 |
 	a4 g8 g4 r8 fis4. b4 b8 |
-	b4 a8 a4 r8 gis4. cis4 cis8 |
+	b4 a8 a4 r8 gis4. cis4 b8 |
 
-%{
-	a4. r4. r2. |
+	a8 fis8 gis8 a4.~ a4.~ a8 gis8 fis8 |
+	gis8 e8 fis8 gis4.~ gis4.~ gis8 fis8 e8 |
+	d2. dis2. |
+	e2. r2. |
 	r2. r2. |
 	r2. r2. |
-	r2. r2. |
-	r2. r2. |
-	r2. r2. |
-%}
 
-	e4 a8 a4 a8 a4 gis8 gis4 r8 |
+	cis4.~ cis8 d8 e8 fis4.~ fis4 fis8~ |
+	fis4 e8~ e8 b'8 gis8 fis4 eis8 fis4 gis8 |
+	a4.~ a8 gis8 fis8 e4 d8~ d4 b8 |
+	cis4 fis8 e4 d8 cis4 d16 cis16 b4. |
+
+	e4. a4 a8 a4 gis8 gis4 r8 |
 	b4 gis8 e4 d8 cis8( fis8) d8 e4 r8 |
-	fis8 d8 e8 fis8 gis8 a8 b8 a8 gis8 a8 gis8 fis8 |
-	eis8 cis8 dis8 eis8 fis8 gis8 a8 gis8 fis8 e8 d8 cis8 |
+
+	fis8 d8 e8 fis4.~ fis4.~ fis8 e8 d8 |
+	e8 cis8 d8 e4.~ e4.~ e8 d8 cis8 |
+
 	d2. e2. |
-	f2. gis8 fis8 e8 fis8 e8 d8 |
+	fis2. gis8 fis8 e8 fis8 e8 d8 |
 	cis4 d8 e2. g4. |
 	fis8 gis8 a8 gis4 a8 a2 r4 \bar "|."
 
@@ -122,7 +131,7 @@ baritone_music = \relative c {
 	d4. d4. gis4. gis4. |
 	cis,4. cis4. fis4. fis4. |
 
-	b8 b,8 cis8 d8( fis8 cis8 d8 b8 cis8 d8 gis8 cis,8 |
+	r8 b,8 cis8 d8( fis8 cis8 d8 b8 cis8 d8 gis8 cis,8 |
 	d8 b8 cis8 d8 b'8 gis8) e8 gis8( b8 d8) cis8 b8 |
 	a4. gis4. fis4. e4. |
 	d4. e4. a2 r4 |
@@ -136,23 +145,28 @@ baritone_music = \relative c {
 	g8 e8 fis8 g8 fis8 e8 b'4.~ b8 a8 g8 |
 	a4. b4. cis4. cis,4. |
 
-%{
-	fis4. fis4. fis4. fis4. |
-	e4. e4. e4. e4. |
-	d4. d4. d4. d4. |
-	cis4. cis4. eis4. eis4. |
-	fis4. fis4. fis4. e4. |
-	dis4. dis4. e4. e4. |
-%}
+	fis4. fis4. b4. b4. |
+	e,4. e4. a4. a4. |
+	r8 fis8 gis8 a8 cis8 gis8 a8 fis8 gis8 a8 dis8 gis,8 |
+	a8 fis8 gis8 a8 fis8 e8 dis8 fis8 a8 cis8 b8 a8 |
+	gis8 e8 fis8 gis8 b8 fis8 gis8 e8 fis8 gis8 cisis8 fis,8 |
+	gis8 e8 fis8 gis8 b8 gis8 e8 gis8 b8 d8 cis8 b8 |
+
+	a4. a4. a4. a4. |
+	gis4. gis4. cis,4. cis4. |
+	fis4. fis4. fis4. gis4. |
+	a4. d,4. e4. e4. |
 
 	a,4. cis4. d4.( e4) r8 |
 	e4. gis4. a4. a,4 r8 |
-	d2. gis2. |
-	cis,2. fis2. |
+	d4. d4. gis4. gis4. |
+	cis,4. cis4. fis4. fis4. |
+
 	r8 b,8 cis8 d8( fis8 cis8 d8 b8 cis8 d8 gis8 cis,8 |
 	d8 b8 cis8 d8 b'8 gis8) e8 gis8( b8 d8) cis8 b8 |
 	a4. gis4. fis4. e4. |
 	d4. e4. a,2 r4 \bar "|."
+
 }
 
 baritone_words = \lyricmode {
@@ -169,7 +183,7 @@ baritone_words = \lyricmode {
 				\override VerticalAxisGroup.staff-affinity = #DOWN
 			}
 
-			\new Staff \with { midiInstrument = #"oboe" } <<
+			\new Staff \with { midiInstrument = #"church organ" } <<
 				\new Voice = "sopranos" {
 					\voiceOne
 					<< \global \soprano_music >>
@@ -183,7 +197,7 @@ baritone_words = \lyricmode {
 			\new Lyrics = "baritones" \with {
 				\override VerticalAxisGroup.staff-affinity = #DOWN
 			}
-			\new Staff \with { midiInstrument = #"oboe" } <<
+			\new Staff \with { midiInstrument = #"church organ" } <<
 				\new Voice = "baritones" {
 					%\voiceThree
 					<< \global \clef "bass" \baritone_music >>
@@ -196,13 +210,13 @@ baritone_words = \lyricmode {
 
 %{
 		\new PianoStaff <<
-			\new Staff \with { midiInstrument = #"oboe" } <<
+			\new Staff \with { midiInstrument = #"church organ" } <<
 				\set Staff.printPartCombineTexts = ##f
 				\partcombine
 				<< \global \soprano_music >>
 				<< \global \alto_music >>
 			>>
-			\new Staff \with { midiInstrument = #"oboe" } <<
+			\new Staff \with { midiInstrument = #"church organ" } <<
 				\clef "bass"
 				<< \global \baritone_music >>
 			>>
