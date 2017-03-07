@@ -1,6 +1,6 @@
 \version "2.18.2"
 
-speed = 80
+speed = 60
 
 normal_tempo = {
 	\time 12/8
@@ -90,7 +90,7 @@ alto_music = \relative c' {
 	gis8 e8 fis8 gis4.~ gis4.~ gis8 fis8 e8 |
 
 	d8 e8 fis8 gis4. cis,8 dis8 eis8 fis4. |
-	b,8 cis8 d8 e4.~ e4.~ fis8 e8 d8 |
+	b,8 cis8 d8~ d4.~ d8 cis8 e8 d8 b8 d8 |
 
 	cis4.~ cis8 d8 e8 fis4.~ fis4 fis8~ |
 	fis4 e8~ e8 b'8 gis8 fis4 eis8 fis4 gis8 |
@@ -140,10 +140,10 @@ baritone_music = \relative c {
 
 	fis4. fis4. b4. b4. |
 	e,4. e4. a4. a4. |
-	r4. f4.~ f4. e4.~ |
-	e4. d4. cis8 a8 cis8 e8 cis8 e8 |
+	r4. f4.~ f4. e4. |
+	d4. e4. a,2. |
 
-	a4. a4. a4. a4. |
+	a'4. a4. a4. a4. |
 	gis4. gis4. cis,4. cis4. |
 	fis4. fis4. fis4. gis4. |
 	a4. d,4. e4. e4. |
@@ -174,7 +174,7 @@ baritone_words = \lyricmode {
 				\override VerticalAxisGroup.staff-affinity = #DOWN
 			}
 
-			\new Staff \with { midiInstrument = #"acoustic grand" } <<
+			\new Staff \with { midiInstrument = #"church organ" } <<
 				\new Voice = "sopranos" {
 					\voiceOne
 					<< \global \soprano_music >>
@@ -188,7 +188,7 @@ baritone_words = \lyricmode {
 			\new Lyrics = "baritones" \with {
 				\override VerticalAxisGroup.staff-affinity = #DOWN
 			}
-			\new Staff \with { midiInstrument = #"acoustic grand" } <<
+			\new Staff \with { midiInstrument = #"church organ" } <<
 				\new Voice = "baritones" {
 					%\voiceThree
 					<< \global \clef "bass" \baritone_music >>
@@ -201,13 +201,13 @@ baritone_words = \lyricmode {
 
 %{
 		\new PianoStaff <<
-			\new Staff \with { midiInstrument = #"acoustic grand" } <<
+			\new Staff \with { midiInstrument = #"church organ" } <<
 				\set Staff.printPartCombineTexts = ##f
 				\partcombine
 				<< \global \soprano_music >>
 				<< \global \alto_music >>
 			>>
-			\new Staff \with { midiInstrument = #"acoustic grand" } <<
+			\new Staff \with { midiInstrument = #"church organ" } <<
 				\clef "bass"
 				<< \global \baritone_music >>
 			>>
