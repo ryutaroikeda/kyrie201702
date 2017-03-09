@@ -46,7 +46,7 @@ soprano_music = \relative c' {
 	fis4.~ fis4 gis8 a4. gis4. |
 
 	cis2. b4.~ b4 r8 |
-	d4.~ d8 cis8 b8 e4. cis4 r8 |
+	d4.~ d8 cis8 b8 a4. cis4 r8 |
 
 	r4. r8 gis8 a8 b8 gis8 a8 b4.~ |
 	b4.~ b8 fis8 gis8 a8 fis8 gis8 a4. |
@@ -90,7 +90,7 @@ alto_music = \relative c' {
 	gis8 e8 fis8 gis4.~ gis4.~ gis8 fis8 e8 |
 
 	d8 e8 fis8 gis4. cis,8 dis8 eis8 fis4. |
-	b,8 dis8 fis8~ fis4.~ fis8 e8 d8 fis8 e8 d8 |
+	b,8 dis8 fis8~ fis4.~ fis8 fis8 e8 d8 cis8 b8 |
 
 	cis4.~ cis8 d8 e8 fis4.~ fis4 fis8~ |
 	fis4 e8~ e8 b'8 gis8 fis4 eis8 fis4 gis8 |
@@ -141,9 +141,9 @@ baritone_music = \relative c {
 	fis4. fis4. b4. b4. |
 	e,4. e4. a4. a4. |
 	r4. f4.~ f4. e4. |
-	dis2. d2. |
+	dis2. e2. |
 
-	a'4. a4. a4. a4. |
+	a4. a4. a4. a4. |
 	gis4. gis4. cis4. cis4. |
 	fis,4. fis4. fis4. gis4. |
 	a4. d,4. e4. e4. |
@@ -174,7 +174,7 @@ baritone_words = \lyricmode {
 				\override VerticalAxisGroup.staff-affinity = #DOWN
 			}
 
-			\new Staff \with { midiInstrument = #"acoustic grand" } <<
+			\new Staff \with { midiInstrument = #"oboe" } <<
 				\new Voice = "sopranos" {
 					\voiceOne
 					<< \global \soprano_music >>
@@ -188,7 +188,7 @@ baritone_words = \lyricmode {
 			\new Lyrics = "baritones" \with {
 				\override VerticalAxisGroup.staff-affinity = #DOWN
 			}
-			\new Staff \with { midiInstrument = #"acoustic grand" } <<
+			\new Staff \with { midiInstrument = #"oboe" } <<
 				\new Voice = "baritones" {
 					%\voiceThree
 					<< \global \clef "bass" \baritone_music >>
@@ -201,13 +201,13 @@ baritone_words = \lyricmode {
 
 %{
 		\new PianoStaff <<
-			\new Staff \with { midiInstrument = #"acoustic grand" } <<
+			\new Staff \with { midiInstrument = #"oboe" } <<
 				\set Staff.printPartCombineTexts = ##f
 				\partcombine
 				<< \global \soprano_music >>
 				<< \global \alto_music >>
 			>>
-			\new Staff \with { midiInstrument = #"acoustic grand" } <<
+			\new Staff \with { midiInstrument = #"oboe" } <<
 				\clef "bass"
 				<< \global \baritone_music >>
 			>>
