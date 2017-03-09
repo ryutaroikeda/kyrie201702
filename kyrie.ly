@@ -1,6 +1,6 @@
 \version "2.18.2"
 
-speed = 80
+speed = 60
 
 normal_tempo = {
 	\time 12/8
