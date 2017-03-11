@@ -2,16 +2,16 @@ SOUNDFONT=/usr/share/sounds/sf2/FluidR3_GM.sf2
 
 all: wav
 
-kyrie.midi: kyrie.ly
+ave-maria.midi: ave-maria.ly
 	lilypond $<
 
-kyrie.wav: kyrie.midi
+ave-maria.wav: ave-maria.midi
 	fluidsynth -F $@ ${SOUNDFONT} $<
 
 play:
-	fluidsynth -a alsa -m alsa_seq -l -i kyrie.midi
+	fluidsynth -a alsa -m alsa_seq -l -i ave-maria.midi
 
-wav: kyrie.wav
+wav: ave-maria.wav
 
 .PHONY: all
 .PHONY: play
