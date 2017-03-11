@@ -14,16 +14,15 @@ global = {
 
 soprano_music = \relative c' {
 
-
-	e4. a4 a8 a4 gis8 gis4 r8 |
-	b4 gis8 e4 d8 cis8( fis8) d8 e4 r8 |
+	e4. a4 a8 a4( gis8) gis4 r8 |
+	b4 gis8 e4 d8( cis8 fis8 d8) e4 r8 |
 
 	r4. r8 gis8 a8 b8 gis8 a8 b4.~ |
 	b4.~ b8 fis8 gis8 a8 fis8 gis8 a4. |
 
 	r4. b4.~ b4. b4.~ |
 	b4. b4.~ b4. b4. |
-	e8 d8 cis8( d8 cis8) b8 a8( d8) b8 cis4 a8 |
+	e8( d8 cis8 d8) cis8 b8 a8 d8 b8 cis4 a8 |
 	a4. d4. cis2 r4 |
 
 	fis,4.~ fis8 g8 a8 b4.~ b4 b8~ |
@@ -60,27 +59,26 @@ soprano_music = \relative c' {
 }
 
 soprano_words = \lyricmode {
-	ky -- ri -- e ky -- ri -- e
-	ky -- ri -- e e -- le -- i -- son
-	ky -- ri -- e ky -- ri -- e
-	ky -- ri -- e ky -- ri -- e
-	e -- le -- i -- son
-	ky -- ri -- e e -- le -- i -- son
-	e -- le -- i -- son
-
+	A -- ve ma -- ri -- a
+	gra -- ti -- a ple -- na
+	do -- mi -- nus do -- mi -- nus
+	do -- mi -- nus do -- mi -- nus
+	be -- ne -- di -- cta
+	tu in mu -- li -- e -- ri -- bus
+	al -- le -- lu -- ia!
 }
 
 alto_music = \relative c' {
 
-	e4. a4 a8 a4 gis8 gis4 r8 |
-	b4 gis8 e4 d8 cis8( fis8) d8 e4 r8 |
+	e4. a4 a8 a4( gis8) gis4 r8 |
+	b4 gis8 e4 d8( cis8 fis8 d8) e4 r8 |
 
-	fis8 d8 e8 fis4.~ fis4.~ fis8 e8 d8 |
-	e8 cis8 d8 e4.~ e4.~ e8 d8 cis8 |
+	fis8( d8 e8 fis4.~ fis4.~ fis8) e8 d8 |
+	e8( cis8 d8 e4.~ e4.~ e8 d8) cis8 |
 
 	d2. e2. |
-	fis2. gis8 fis8( e8 fis8) e8 d8 |
-	cis4 d8 e2. g4. |
+	fis2. gis8 fis8 e8 fis8 e8 d8 |
+	cis4( d8) e2. g4. |
 	fis8( gis8 a8 gis4) a8 a2 r4 |
 
 	r2. d,4.~ d8 e8 fis8 |
@@ -117,12 +115,13 @@ alto_music = \relative c' {
 }
 
 alto_words = \lyricmode {
-	ky -- ri -- e ky -- ri -- e
-	ky -- ri -- e e -- le -- i -- son
-	ky -- ri -- e e -- lei -- son
-	ky -- ri -- e e -- lei -- son
-	ky -- ri -- e e -- le -- i -- son
-	ky -- ri -- e e -- le -- i -- son
+	a -- ve ma -- ri -- a
+	gra -- ti -- a ple -- na
+	do -- mi -- nus
+	te -- cum
+	be -- ne -- di -- cta
+	tu in mu -- li -- e -- ri -- bus
+	al -- le -- lu -- ia!
 }
 
 baritone_music = \relative c {
@@ -133,10 +132,10 @@ baritone_music = \relative c {
 	d4. d4. gis4. gis4. |
 	cis,4. cis4. fis4. fis4. |
 
-	r8 b,8 cis8 d8( fis8 cis8 d8 b8 cis8 d8 gis8 cis,8 |
-	d8 b8 cis8 d8 b'8 gis8) e8 gis8( b8 d8) cis8 b8 |
-	a4. gis4. fis4. e4. |
-	d4. e4. a2 r4 |
+	r8 b,8 cis8 d8 fis8 cis8 d8 b8 cis8 d8 gis8 cis,8 |
+	d8 b8 cis8 d8 b'8 gis8 e8 gis8 b8 d8( cis8) b8 |
+	a4.( gis4. fis4.) e4. |
+	d4.( e4.) a2 r4 |
 
 	d,4. d4. d4. d4. |
 	cis4. cis4. fis4. fis4. |
@@ -170,10 +169,11 @@ baritone_music = \relative c {
 }
 
 baritone_words = \lyricmode {
-	ky -- ri -- e e -- le -- i -- son
-	ky -- ri -- e
-	ky -- ri -- e e -- le -- i -- son
-	ky -- ri -- e e -- le -- i -- son
+	A -- ve a -- ve
+	ma -- ri -- a gra -- ti -- a ple -- na
+	be -- ne -- di -- cta tu in mu -- li -- e -- ri -- bus
+	et be -- ne -- di -- ctus fru -- ctus ven -- tris tu -- i
+	al -- le -- lu -- ia!
 }
 
 \score {
