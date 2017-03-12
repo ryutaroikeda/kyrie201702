@@ -46,9 +46,9 @@ soprano_music = \relative c' {
 	fis4.~( fis4 gis8) a4. gis4. |
 
 	r2. b4. e4 e8 |
-	e4( d8) d4 r8 cis4. fis4( e8 |
+	e4( d8) d4 r8 cis4. fis4 e8 |
 
-	d4.) r8 gis,8 a8 b8 gis8 a8 b4.~ |
+	d4 d8 r8 gis,8 a8 b8 gis8 a8 b4.~ |
 	b4.~ b8 fis8 gis8 a8 fis8 gis8 a4. |
 
 	r4. b4.~ b4. b4.~ |
@@ -84,7 +84,7 @@ soprano_words = \lyricmode {
 	o -- ra pro no -- bis.
 
 	A -- ve Ma -- ri -- a
-	a -- ve
+	a -- ve Ma -- ri -- a
 
 	do -- mi -- nus do -- mi -- nus
 	do -- mi -- nus do -- mi -- nus
