@@ -247,37 +247,67 @@ baritone_words = \lyricmode {
 
 }
 
-\score {
-	<<
-		\new ChoirStaff <<
-			\new Staff \with { midiInstrument = #"choir aahs" } <<
-				\new Voice = "sopranos" {
-					<< \global \soprano_music >>
-				}
+%{
+\header {
+	title = "Ave Maria"
+	composer = "Ryutaro Ikeda"
+}
+%}
+
+\book {
+	\score {
+		<<
+			\new ChoirStaff <<
+				\new Staff \with { midiInstrument = #"choir aahs" } <<
+					\new Voice = "sopranos" {
+						<< \global \soprano_music >>
+					}
+				>>
+				\new Lyrics = "sopranos"
+
+				\new Staff \with { midiInstrument = #"choir aahs" } <<
+					\new Voice = "altos" {
+						<< \global \alto_music >>
+					}
+				>>
+
+				\new Lyrics = "altos"
+
+				\new Staff \with { midiInstrument = #"choir aahs" } <<
+					\new Voice = "baritones" {
+						<< \global \clef "bass" \baritone_music >>
+					}
+				>>
+				\new Lyrics = "baritones"
+
+				\context Lyrics = "sopranos" \lyricsto "sopranos" \soprano_words
+				\context Lyrics = "altos" \lyricsto "altos" \alto_words
+				\context Lyrics = "baritones" \lyricsto "baritones" \baritone_words
 			>>
-			\new Lyrics = "sopranos"
 
-			\new Staff \with { midiInstrument = #"choir aahs" } <<
-				\new Voice = "altos" {
-					<< \global \alto_music >>
-				}
-			>>
-
-			\new Lyrics = "altos"
-
-			\new Staff \with { midiInstrument = #"choir aahs" } <<
-				\new Voice = "baritones" {
-					<< \global \clef "bass" \baritone_music >>
-				}
-			>>
-			\new Lyrics = "baritones"
-
-			\context Lyrics = "sopranos" \lyricsto "sopranos" \soprano_words
-			\context Lyrics = "altos" \lyricsto "altos" \alto_words
-			\context Lyrics = "baritones" \lyricsto "baritones" \baritone_words
 		>>
+		\midi {}
+		\layout {}
+	}
+}
 
-	>>
-	\midi {}
-	\layout {}
+\book {
+	\bookOutputSuffix "piano"
+	\score {
+		<<
+		\new PianoStaff <<
+		\new Staff <<
+		\set Staff.printPartCombineTexts = ##f
+		\partcombine
+		<< \global \soprano_music >>
+		<< \global \alto_music >>
+		>>
+		\new Staff <<
+		\clef bass
+		\set Staff.printPartCombineTexts = ##f
+		<< \global \baritone_music >>
+		>>
+		>>
+		>>
+	}
 }
