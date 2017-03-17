@@ -60,34 +60,34 @@ soprano_music = \relative c' {
 soprano_words = \lyricmode {
 	A -- ve Ma -- ri -- a
 	gra -- ti -- a ple -- na
+	do -- mi -- nus do -- mi -- nus __
 	do -- mi -- nus do -- mi -- nus
-	do -- mi -- nus do -- mi -- nus
-	be -- ne -- di -- cta
+	be -- ne __ di -- cta
 	tu in mu -- li -- e -- ri -- bus
 	al -- le -- lu -- ia!
 
-	San -- cta Ma -- ri -- a ma -- ter de -- i
+	San -- cta Ma -- ri -- a __ ma -- ter de -- i
 	o -- ra pro no -- bis pec -- ca -- to -- ri -- bus.
 
 	A -- ve Ma -- ri -- a
 	a -- ve Ma -- ri -- a
-	a -- ve Ma -- ri -- a
+	a -- ve Ma -- ri -- a __
 
-	Do -- mi -- nus do -- mi -- nus
+	Do -- mi -- nus do -- mi -- nus __
 	do -- mi -- nus do -- mi -- nus
 	do -- mi -- nus do -- mi -- nus
 	do -- mi -- nus
 	do -- mi -- nus.
 
-	San -- cta Ma -- ri -- a
+	San -- cta Ma -- ri -- a __
 	o -- ra pro no -- bis.
 
 	A -- ve Ma -- ri -- a
 	a -- ve Ma -- ri -- a
 
+	do -- mi -- nus do -- mi -- nus __
 	do -- mi -- nus do -- mi -- nus
-	do -- mi -- nus do -- mi -- nus
-	be -- ne -- di -- cta
+	be -- ne __ di -- cta
 	tu in mu -- li -- e -- ri -- bus
 	al -- le -- lu -- ia!
 }
@@ -147,7 +147,7 @@ alto_words = \lyricmode {
 	tu in mu -- li -- e -- ri -- bus
 	al -- le -- lu -- ia!
 
-	San -- cta Ma -- ri -- a
+	San -- cta Ma -- ri -- a __
 	o -- ra pro no -- bis.
 
 	A -- ve Ma -- ri -- a
@@ -156,9 +156,9 @@ alto_words = \lyricmode {
 
 	Do -- mi -- nus
 	te -- cum
-	do -- mi -- nus.
+	do __ mi -- nus.
 
-	San -- cta Ma -- ri -- a ma -- ter de -- i
+	San -- cta Ma -- ri -- a __ ma -- ter de -- i
 	o -- ra pro no -- bis pec -- ca -- to -- ri -- bus.
 
 	A -- ve Ma -- ri -- a
