@@ -192,9 +192,9 @@ baritone_music = \relative c {
 
 	d,8 d8 e8 fis8 e8 d8 a'4.~ a8 g8 fis8 |
 	g8 e8 fis8 g8 fis8 e8 b'4.~ b8 a8 g8 |
-	a4. b4. cis4. cis4. |
+	a4. b4. cis4. cis,4. |
 
-	fis,4. fis4. b4. b4. |
+	fis4. fis4. b4. b4. |
 	e,4. e4. a4. a4. |
 	r4. f4.~( f4. e4.) |
 	dis2. e2. |
