@@ -103,7 +103,7 @@ alto_music = \relative c' {
 	d2. e2. |
 	fis2. gis8 fis8 e8 fis8 e8 d8 |
 	cis4( d8) e2. g4. |
-	fis8( gis8 a8 gis4) a8 a2 r4 |
+	fis8( gis8 a8) gis4( a8) a2 r4 |
 
 	r2. d,4.~ d8 e8 fis8 |
 	g4.~ g4 g8~( g4 fis8~ fis4 e8 |
@@ -134,7 +134,7 @@ alto_music = \relative c' {
 	d2. e2. |
 	fis2. gis8 fis8 e8 fis8 e8 d8 |
 	cis4( d8) e2. g4. |
-	fis8( gis8 a8 gis4) a8 a2 r4 \bar "|."
+	fis8( gis8 a8) gis4( a8) a2 r4 \bar "|."
 
 }
 
